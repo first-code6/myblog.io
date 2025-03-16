@@ -11,6 +11,7 @@ const TicTacToe = () => {
   const [playerO, setPlayerO] = useState(true)
   const [winBox, setWinBox] = useState(false)
   const [winnerStr, setWinnerStr] = useState("")
+  const [setp, setStep] = useState(0)
 
   const getSize = () => {
     if(window.innerHeight < window.innerWidth){
@@ -187,6 +188,8 @@ const TicTacToe = () => {
                       setWinnerStr(winner)
                       setWinBox(true)
                     }
+                    
+                    setp === 8 ? setWinBox(true) : setStep(a => a += 1) 
 
                   }}
                 >
@@ -231,6 +234,7 @@ const TicTacToe = () => {
               ["","",""]
             ])
             setWinBox(false)
+            setStep(0)
           }}
         >
           <div
@@ -245,7 +249,7 @@ const TicTacToe = () => {
               color: "black",
             }}
           >
-            {`赢家是： ${winnerStr} !!`}
+            {winnerStr === "" ? `平局！` : `赢家是： ${winnerStr} !!`}
           </div>
         </div>
       }
