@@ -29,14 +29,14 @@ const Tag = () => {
                       color: active === index ? "rgb(150,150,150)" : "",
                     }} 
                     key={item.header}
+                    onClick={() => {
+                      setActive(index)
+                      navigate(item.href)
+                    }}
                   >
                     <div
                       style={{
                         margin: "15px",
-                      }}
-                      onClick={() => {
-                        setActive(index)
-                        navigate(item.href)
                       }}
                     >
                       {item.header}

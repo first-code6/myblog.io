@@ -4,6 +4,10 @@ const tagListData = [
      href: "/"
   },
   {
+    header: "博客",
+     href: "/bolog"
+  },
+  {
     header: "应用",
      href: "/app"
   },

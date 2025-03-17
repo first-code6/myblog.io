@@ -6,6 +6,7 @@ import {
 import Home from '../pages/Home/Home'
 import DataList from '../pages/Home/component/DataList'
 import TicTacToe from '../pages/Ganmes/Tic-Tac-Toe/TicTacToe'
+import MyBolog0503080113 from '../pages/Bolog/2503180113/MyBolog0503080113'
 
 const RouterPrimary = () => {
 
@@ -23,6 +24,10 @@ const RouterPrimary = () => {
                     element: <DataList dataType="gameData" />,
                 },
                 {
+                    path: "/bolog",
+                    element: <DataList dataType="BologData" />,
+                },
+                {
                     path: "/app",
                     element: <DataList dataType="nullData" />
                 },
@@ -35,7 +40,11 @@ const RouterPrimary = () => {
         {
             path: "/tictactoe",
             element: <TicTacToe />
-        }
+        },
+        {
+            path: "/2503180113",
+            element: <MyBolog0503080113 />
+        },
     ]))
 }
 
