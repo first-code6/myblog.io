@@ -20,8 +20,18 @@ const BologData  = [
   }
 ]
 
+const appData = [
+  {
+    header: "价格查询",
+    info: "查询最新金价",
+    date: "2025-05-10",
+    url: "/pricecheck"
+  }
+]
+
 export default{
   nullData,
   gameData,
   BologData,
+  appData,
 }

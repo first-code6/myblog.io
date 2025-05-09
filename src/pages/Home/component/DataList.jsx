@@ -1,9 +1,7 @@
-import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import data from '../../../data'
 import '../style/DataList.css'
-import { Outlet } from 'react-router-dom'
 
 const DataList = ({
   dataType="nullData"

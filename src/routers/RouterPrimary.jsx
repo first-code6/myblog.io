@@ -1,4 +1,3 @@
-import React from 'react'
 import { 
     useRoutes,
  } from 'react-router-dom'
@@ -7,6 +6,7 @@ import Home from '../pages/Home/Home'
 import DataList from '../pages/Home/component/DataList'
 import TicTacToe from '../pages/Ganmes/Tic-Tac-Toe/TicTacToe'
 import MyBolog0503080113 from '../pages/Bolog/2503180113/MyBolog0503080113'
+import PriceCheck from '../pages/app/priceCheck/PriceCheck'
 
 const RouterPrimary = () => {
 
@@ -29,7 +29,7 @@ const RouterPrimary = () => {
                 },
                 {
                     path: "/app",
-                    element: <DataList dataType="nullData" />
+                    element: <DataList dataType="appData" />
                 },
                 {
                     path: "/about",
@@ -44,6 +44,10 @@ const RouterPrimary = () => {
         {
             path: "/2503180113",
             element: <MyBolog0503080113 />
+        },
+        {
+            path: "/pricecheck",
+            element: <PriceCheck />
         },
     ]))
 }
