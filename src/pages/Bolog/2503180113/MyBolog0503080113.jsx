@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import MarkDown from 'react-markdown'
 
@@ -13,7 +13,18 @@ const MyBolog0503080113 = () => {
   },[])
 
   return (
-    <MarkDown children={mdData}/>
+    <div
+      style={{
+          width: "100%",
+          height: "100%",
+          // overflow: "auto",
+          paddingLeft: "10%",
+          paddingTop: "2%",
+          paddingBottom: "2%",
+      }}
+    >
+      <MarkDown children={mdData}/>
+    </div>
   )
 }
 
