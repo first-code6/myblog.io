@@ -83,8 +83,8 @@ Esbuild 能力带来的 Typescript/jsx 的原生支持。
 ```js
 // 父组件
 export default function Reactuse() {
-	const [inp_value, setinp_value] = useState('123');
-    const [test_value, settest_value] = useState('456');
+    	const [inp_value, setinp_value] = useState('123');
+    	const [test_value, settest_value] = useState('456');
 
 // 这个函数没有依赖项，不会被更新。即使此组件重新渲染
 	const fa_callback = useCallback(() => {
